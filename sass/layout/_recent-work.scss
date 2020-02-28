@@ -1,0 +1,14 @@
+.recent-work{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-grid-gap: 4rem;
+    grid-gap: 5rem;
+    background: red;
+    padding: 0 6rem;
+    margin-top: 10rem;
+
+
+    &-item{
+        background: white;
+    }
+}
