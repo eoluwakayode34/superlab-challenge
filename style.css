@@ -15,6 +15,20 @@ body {
   font-weight: 400;
   color: #222222; }
 
+.heading-primary {
+  font-size: 8.3rem;
+  font-weight: 700;
+  font-family: "Poppins";
+  line-height: 1;
+  margin: 4rem 0;
+  letter-spacing: -.3rem; }
+
+.text-primary {
+  font-family: "Anonymous Pro";
+  word-spacing: .3rem;
+  font-size: 2rem;
+  font-weight: 400; }
+
 .header-links {
   font-family: "Poppins"; }
   .header-links__item {
@@ -35,12 +49,18 @@ body {
 
 .btn {
   background: #70da9b;
-  padding: 2rem 4rem;
+  padding: 2rem 3rem;
   transition: transform .3s ease-in;
   display: inline-block; }
   .btn:hover {
     background: #5fe395;
     transform: translateY(-0.3rem); }
+
+.btn-arrow {
+  margin-top: 4rem;
+  padding: 2rem;
+  background: #70da9b;
+  display: inline-block; }
 
 .page-header {
   position: fixed;
@@ -49,7 +69,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 4rem 3rem 4rem; }
+  padding: 2rem 5rem 2rem 5rem;
+  z-index: 5000; }
 
 .page-logo {
   width: 4rem;
@@ -57,3 +78,20 @@ body {
   .page-logo img {
     width: 3rem;
     height: 3rem; }
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  top: 8rem;
+  position: relative; }
+
+.showcase-text {
+  padding-left: 5rem;
+  flex-basis: 50%; }
+
+.showcase-img {
+  padding-top: 10rem;
+  align-self: flex-end;
+  width: 80%;
+  flex-basis: 40%; }

@@ -1,7 +1,7 @@
 .btn{
 
     background:#70da9b;
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
     transition: transform .3s ease-in;
     display: inline-block;
 
@@ -11,3 +11,9 @@
     }
 }
 
+.btn-arrow{
+    margin-top: 4rem;
+    padding: 2rem;
+    background:#70da9b;
+    display: inline-block;
+}
