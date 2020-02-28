@@ -4,6 +4,7 @@
     height: 100vh;
     top: 8rem;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -13,7 +14,7 @@
     flex-basis: 50%;
 }
 .showcase-img{
-    padding-top: 10rem;
+    padding-top: 4rem;
     align-self: flex-end;
     width: 80%;
     flex-basis: 40%;
