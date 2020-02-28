@@ -7,7 +7,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 4rem $page-right-m 3rem $page-left-m;
+        padding: 2rem $page-right-m 2rem $page-left-m;
+        z-index: 5000;
         
 
     }
