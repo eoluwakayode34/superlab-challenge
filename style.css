@@ -1,3 +1,6 @@
+.text-left {
+  text-align: left; }
+
 *, *::before,
 *::after {
   margin: 0;
@@ -28,6 +31,13 @@ body {
   word-spacing: .3rem;
   font-size: 2rem;
   font-weight: 400; }
+
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: "Poppins";
+  line-height: 1.3;
+  letter-spacing: -.3rem; }
 
 .header-links {
   font-family: "Poppins"; }
@@ -84,14 +94,51 @@ body {
   justify-content: space-between;
   height: 100vh;
   top: 8rem;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .showcase-text {
   padding-left: 5rem;
   flex-basis: 50%; }
 
 .showcase-img {
-  padding-top: 10rem;
+  padding-top: 4rem;
   align-self: flex-end;
   width: 80%;
   flex-basis: 40%; }
+
+.section-work {
+  background: #36083c;
+  display: flex;
+  color: #fff;
+  margin-top: 7.5rem;
+  padding: 0;
+  align-items: center; }
+
+.section-work-text {
+  flex-basis: 70%; }
+
+.section-work-img {
+  flex-basis: 30%;
+  height: 40rem;
+  align-self: flex-start;
+  margin: 0; }
+
+.section-work-text-heading {
+  font-size: 1.7rem;
+  color: #fff;
+  width: 60%;
+  font-weight: 300;
+  background: #36083c;
+  padding: 2rem; }
+
+.recent-work {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-grid-gap: 4rem;
+  grid-gap: 5rem;
+  background: red;
+  padding: 0 6rem;
+  margin-top: 10rem; }
+  .recent-work-item {
+    background: white; }
