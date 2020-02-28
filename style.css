@@ -95,3 +95,6 @@ body {
   align-self: flex-end;
   width: 80%;
   flex-basis: 40%; }
+
+.section-work {
+  background: #3b043b; }
