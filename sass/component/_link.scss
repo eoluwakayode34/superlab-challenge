@@ -1,0 +1,33 @@
+.header-links{
+    font-family: $font-primary;
+
+  
+
+    &__item{
+        font-size: 1.7rem;
+        text-decoration: none;
+        font-weight: 700;
+        color: #222222;
+
+        &:not(:last-child){
+            padding-right: 6rem;
+        }
+    }
+
+    &__item:hover{
+        
+        &:not(:last-child){
+            text-decoration: none;
+        font-weight: 600;
+        color: $color-tertiary;
+           
+        }
+    }
+
+    &__item:active{
+        text-decoration: none;
+        font-weight: 600;
+        color: #222222;
+    }
+}
+

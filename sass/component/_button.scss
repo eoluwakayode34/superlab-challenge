@@ -1,0 +1,13 @@
+.btn{
+
+    background:#70da9b;
+    padding: 2rem 4rem;
+    transition: transform .3s ease-in;
+    display: inline-block;
+
+    &:hover{
+        background: #5fe395;
+        transform: translateY(-.3rem);
+    }
+}
+

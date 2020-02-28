@@ -1,0 +1,30 @@
+.page{
+
+    &-header{
+        position: fixed;
+        background: #fff;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem $page-right-m 3rem $page-left-m;
+        
+
+    }
+
+    &-logo{
+        width: 4rem;
+        height: 4rem;
+
+        img{
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+
+}
+
+
+
+
+
