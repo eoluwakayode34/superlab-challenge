@@ -31,3 +31,23 @@
     }
 }
 
+.footer-link{
+    font-size: 3rem;
+    font-family: $font-primary;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+.footer-link:link, .footer-link:visited{
+    color: #DCDCDC;
+
+}
+
+.footer-link:hover, .footer-link:active{
+    color: #70da9b;
+
+}
+
+.footer-social-links{
+    display: flex;
+}

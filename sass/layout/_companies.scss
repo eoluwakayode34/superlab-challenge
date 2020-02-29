@@ -1,4 +1,29 @@
 .companies{
-    background-image: url(https://assets.website-files.com/5dcc4ca…/5dcc4ca…_Superlab_BackgroundPattern_Clients.svg);
-    
+    background-image:  url(https://assets.website-files.com/5dcc4cad8cfd667007f46563/5dcc4cad8cfd660594f4657d_Superlab_BackgroundPattern_Clients.svg);
+    background-color: #353535;
+    background-size: auto 100%;
+    justify-content: center;
+    background-position: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    background-repeat: no-repeat;
+    padding: 10rem 1rem;
+ 
+    &-heading{
+        
+        text-align: center;
+        padding: $page-left-m 7rem;
+    }
 }
+
+
+.container-companies{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 6rem 12rem;
+    margin-bottom: 6rem;
+    margin-top: 4rem;
+}
+
