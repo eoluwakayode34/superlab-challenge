@@ -11,3 +11,31 @@ $color-tertiary: #70da9b;
 $font-primary:  'Poppins' ;
 $font-secondary: 'Anonymous Pro' ;
 
+.m-small{
+    margin: 2rem
+}
+
+.mt-small{
+    margin-top: 2rem
+}
+
+.mt-big{
+    margin-top: 10rem;
+}
+
+.mt-medium{
+    margin-top: 7rem;
+}
+
+.mr-small{
+    margin-top: 2rem
+}
+
+.ml-small{
+    margin-top: 2rem
+}
+.mb-small{
+    margin-top: 2rem
+}
+
+$box-shawdow-big:0 5rem 8rem rgba(59, 59, 59, 0.3);

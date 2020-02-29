@@ -19,10 +19,25 @@ $secondary-font: 'Anonymous Pro', ;
     font-weight: 400;
 }
 
+.text-secondary{
+    font-family: $font-secondary;
+    word-spacing: .3rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
 .heading-secondary{
     font-size: 4rem;
     font-weight: 700;
     font-family: $font-primary;
     line-height: 1.3;
-    letter-spacing: -.3rem;
+    letter-spacing: -.1srem;
+}
+
+.heading-tertiary{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: $font-primary;
+    line-height: 1.3;
+    letter-spacing: -.1rem;
 }
