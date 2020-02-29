@@ -162,6 +162,12 @@ body {
   width: 80%;
   flex-basis: 40%; }
 
+.award {
+  position: fixed;
+  top: 20rem;
+  width: 3rem;
+  left: 0; }
+
 .section-work {
   background: #36083c;
   display: flex;
