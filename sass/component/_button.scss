@@ -5,7 +5,18 @@
     transition: transform .3s ease-in;
     display: inline-block;
 
-    &:hover{
+    @media only screen and (max-width: $bp-tab){
+        position: absolute;
+        bottom: 10rem;
+        width: 80%;
+        left: 0;
+        text-align: center;
+        transform: translateX(12%);
+        color: #000;
+    }
+    
+
+        &:hover{
         background: #5fe395;
         transform: translateY(-.3rem);
     }
@@ -17,3 +28,70 @@
     background:#70da9b;
     display: inline-block;
 }
+
+
+.header-hamburger{
+    display: none;
+    position: relative;
+
+    
+    @media only screen and (max-width: $bp-tab){
+    display: block;
+
+
+    }
+
+    
+
+    &, 
+    &::after,
+    &::before{
+        content: "";
+        width: 5rem;
+        height: .4rem;
+        background: #000;
+        transition: all .8s;
+    
+    }
+
+    &::after,
+    &::before{
+       position: absolute;    
+    }
+
+    &::before{
+        top: 1.5rem; 
+        left: 0;   
+     }
+
+     
+    
+    
+    
+     &::after{
+        top: -1.5rem; 
+        left: 0;   
+   
+     }
+   
+}
+
+.active{
+    
+
+    &::before{
+        content: "" ;
+        transform: rotate(405deg);  
+        top: 0;
+        background-color: #fff;
+     }
+    
+     &::after{
+        content: "" ;
+        transform: rotate(-405deg); 
+        top: 0; 
+        background-color: #fff;
+
+     }
+}
+
