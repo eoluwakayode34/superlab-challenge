@@ -1,10 +1,16 @@
 .hero{
     display: flex;
     justify-content: space-between;
-    height: 100vh;
     top: 8rem;
     position: relative;
     overflow: hidden;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-tab-port){
+        flex-direction: column;
+    }
+
+    
 }
 
 
@@ -17,7 +23,16 @@
     padding-top: 4rem;
     align-self: flex-end;
     width: 80%;
-    flex-basis: 40%;
+    flex-basis: 40%; 
+
+    @media only screen and (max-width: $bp-large){
+        padding-top: 0;
+    }
+
+    @media only screen and (max-width: $bp-tab-port){
+        width: 100%;
+        object-fit: 50%;
+    }
     
 }
 
@@ -26,4 +41,5 @@
     top: 20rem;
     width: 3rem;
     left: 0;
+    z-index: 100000;
 }

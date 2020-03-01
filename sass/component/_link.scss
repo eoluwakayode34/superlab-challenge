@@ -1,6 +1,28 @@
 .header-links{
     font-family: $font-primary;
+    display: flex;
+    font-size: 3rem;
+    align-items: center;
 
+
+    @media only screen and (max-width: $bp-tab){  
+    font-size: 5rem;     
+    width: 100%;
+    background: #000;
+    position: fixed;
+    top: 0;
+    padding: 12rem;
+    margin: 0;
+    height: 100vh;
+   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    right: -100%;
+    transition: right .8s ease-in;
+    }
+
+    
   
 
     &__item{
@@ -8,29 +30,54 @@
         text-decoration: none;
         font-weight: 700;
         color: #222222;
+        padding: 4rem;
+
+        @media only screen and (max-width: $bp-tab){
+            color: #fff;         
+           
+
+        }
+    }
+
+        &__item:hover{
+        
+            &:not(:last-child){
+                text-decoration: none;
+            font-weight: 600;
+            color: $color-tertiary;
+               
+            }
+        }
+    
+        &__item:active{
+            text-decoration: none;
+            font-weight: 600;
+            color: #222222;
+        }
+    
+    
+        
+        
+    
 
         &:not(:last-child){
             padding-right: 6rem;
-        }
-    }
 
-    &__item:hover{
-        
-        &:not(:last-child){
-            text-decoration: none;
-        font-weight: 600;
-        color: $color-tertiary;
-           
-        }
-    }
+            @media only screen and (max-width: $bp-tab){
+                padding-bottom: 12rem;
+                text-align: center;
+                padding: 0 5rem;  
+                margin-bottom: 5rem;              
+               
+    
+            }
 
-    &__item:active{
-        text-decoration: none;
-        font-weight: 600;
-        color: #222222;
-    }
+            
+        }
+    
 }
 
+    
 .footer-link{
     font-size: 3rem;
     font-family: $font-primary;
@@ -50,4 +97,9 @@
 
 .footer-social-links{
     display: flex;
+}
+
+
+.active{
+right: 0;
 }

@@ -31,6 +31,15 @@
 html {
   font-size: 65%;
   box-sizing: border-box; }
+  @media only screen and (min-width: 122.75rem) {
+    html {
+      font-size: 70%; } }
+  @media only screen and (max-width: 1072px) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 956px) {
+    html {
+      font-size: 47%; } }
 
 body {
   font-family: "Poppins";
@@ -80,14 +89,34 @@ body {
   letter-spacing: -.1rem; }
 
 .header-links {
-  font-family: "Poppins"; }
+  font-family: "Poppins";
+  display: flex;
+  font-size: 3rem;
+  align-items: center; }
+  @media only screen and (max-width: 956px) {
+    .header-links {
+      font-size: 5rem;
+      width: 100%;
+      background: #000;
+      position: fixed;
+      top: 0;
+      padding: 12rem;
+      margin: 0;
+      height: 100vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      right: -100%;
+      transition: right .8s ease-in; } }
   .header-links__item {
     font-size: 1.7rem;
     text-decoration: none;
     font-weight: 700;
-    color: #222222; }
-    .header-links__item:not(:last-child) {
-      padding-right: 6rem; }
+    color: #222222;
+    padding: 4rem; }
+    @media only screen and (max-width: 956px) {
+      .header-links__item {
+        color: #fff; } }
   .header-links__item:hover:not(:last-child) {
     text-decoration: none;
     font-weight: 600;
@@ -96,6 +125,14 @@ body {
     text-decoration: none;
     font-weight: 600;
     color: #222222; }
+  .header-links:not(:last-child) {
+    padding-right: 6rem; }
+    @media only screen and (max-width: 956px) {
+      .header-links:not(:last-child) {
+        padding-bottom: 12rem;
+        text-align: center;
+        padding: 0 5rem;
+        margin-bottom: 5rem; } }
 
 .footer-link {
   font-size: 3rem;
@@ -112,11 +149,23 @@ body {
 .footer-social-links {
   display: flex; }
 
+.active {
+  right: 0; }
+
 .btn {
   background: #70da9b;
   padding: 2rem 3rem;
   transition: transform .3s ease-in;
   display: inline-block; }
+  @media only screen and (max-width: 956px) {
+    .btn {
+      position: absolute;
+      bottom: 10rem;
+      width: 80%;
+      left: 0;
+      text-align: center;
+      transform: translateX(12%);
+      color: #000; } }
   .btn:hover {
     background: #5fe395;
     transform: translateY(-0.3rem); }
@@ -126,6 +175,39 @@ body {
   padding: 2rem;
   background: #70da9b;
   display: inline-block; }
+
+.header-hamburger {
+  display: none;
+  position: relative; }
+  @media only screen and (max-width: 956px) {
+    .header-hamburger {
+      display: block; } }
+  .header-hamburger, .header-hamburger::after, .header-hamburger::before {
+    content: "";
+    width: 5rem;
+    height: .4rem;
+    background: #000;
+    transition: all .8s; }
+  .header-hamburger::after, .header-hamburger::before {
+    position: absolute; }
+  .header-hamburger::before {
+    top: 1.5rem;
+    left: 0; }
+  .header-hamburger::after {
+    top: -1.5rem;
+    left: 0; }
+
+.active::before {
+  content: "";
+  transform: rotate(405deg);
+  top: 0;
+  background-color: #fff; }
+
+.active::after {
+  content: "";
+  transform: rotate(-405deg);
+  top: 0;
+  background-color: #fff; }
 
 .page-header {
   position: fixed;
@@ -144,13 +226,19 @@ body {
     width: 3rem;
     height: 3rem; }
 
+.flex {
+  display: flex; }
+
 .hero {
   display: flex;
   justify-content: space-between;
-  height: 100vh;
   top: 8rem;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  align-items: center; }
+  @media only screen and (max-width: 652px) {
+    .hero {
+      flex-direction: column; } }
 
 .showcase-text {
   padding-left: 7rem;
@@ -161,12 +249,20 @@ body {
   align-self: flex-end;
   width: 80%;
   flex-basis: 40%; }
+  @media only screen and (max-width: 122.75rem) {
+    .showcase-img {
+      padding-top: 0; } }
+  @media only screen and (max-width: 652px) {
+    .showcase-img {
+      width: 100%;
+      object-fit: 50%; } }
 
 .award {
   position: fixed;
   top: 20rem;
   width: 3rem;
-  left: 0; }
+  left: 0;
+  z-index: 100000; }
 
 .section-work {
   background: #36083c;
@@ -200,6 +296,9 @@ body {
   grid-gap: 5rem;
   padding: 0 6rem;
   margin-top: 10rem; }
+  @media only screen and (max-width: 652px) {
+    .recent-work {
+      grid-template-columns: repeat(1, 1fr); } }
   .recent-work-item {
     background: white; }
 
@@ -210,6 +309,20 @@ body {
   position: relative;
   left: 5rem;
   top: 0; }
+  @media only screen and (min-width: 1572px) {
+    .client-img1 {
+      left: 30%; } }
+  @media only screen and (min-width: 122.75rem) {
+    .client-img1 {
+      right: -50%;
+      left: 40%; } }
+  @media only screen and (max-width: 956px) {
+    .client-img1 {
+      left: 0;
+      width: 35rem; } }
+  @media only screen and (max-width: 652px) {
+    .client-img1 {
+      left: 40%; } }
 
 .triangle {
   clip-path: polygon(0 0, 100% 100%, 100% 0);
@@ -229,10 +342,15 @@ body {
   width: 100%;
   height: 50rem;
   background: white; }
+  @media only screen and (max-width: 956px) {
+    .client-work-1 {
+      width: 80%;
+      margin-left: auto; } }
   .client-work-1-detail {
     display: flex;
     align-items: flex-end;
-    flex-direction: column; }
+    flex-direction: column;
+    text-align: right; }
 
 .client-work-2 {
   width: 100%;
@@ -240,6 +358,12 @@ body {
   background: white;
   position: relative;
   margin-top: -10rem; }
+  @media only screen and (max-width: 956px) {
+    .client-work-2 {
+      width: 80%; } }
+  @media only screen and (max-width: 652px) {
+    .client-work-2 {
+      top: 5rem; } }
   .client-work-2-detail {
     display: flex;
     align-items: flex-start;
@@ -250,10 +374,19 @@ body {
   height: 50rem;
   background: white;
   top: 16rem; }
+  @media only screen and (max-width: 956px) {
+    .client-work-3 {
+      width: 80%; } }
+  @media only screen and (max-width: 652px) {
+    .client-work-3 {
+      left: 20%;
+      top: 5rem; } }
   .client-work-3-detail {
     display: flex;
     align-items: flex-end;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-right: 10rem;
+    text-align: right; }
 
 .client-work-4 {
   width: 100%;
@@ -261,6 +394,9 @@ body {
   background: white;
   position: relative;
   margin-top: -1rem; }
+  @media only screen and (max-width: 956px) {
+    .client-work-4 {
+      width: 80%; } }
   .client-work-4-detail {
     display: flex;
     align-items: flex-start;
@@ -282,6 +418,9 @@ body {
   position: absolute;
   top: 8rem;
   right: -9rem; }
+  @media only screen and (max-width: 956px) {
+    .semi-circle {
+      left: 50%; } }
 
 .semi-circle-arc {
   width: 35rem;
@@ -312,6 +451,19 @@ body {
   left: 10rem;
   top: 4rem;
   box-shadow: 0 5rem 8rem rgba(59, 59, 59, 0.3); }
+  @media only screen and (max-width: 956px) {
+    .client-img3 {
+      width: 32rem; } }
+  @media only screen and (min-width: 1572px) {
+    .client-img3 {
+      left: 43%; } }
+  @media only screen and (min-width: 122.75rem) {
+    .client-img3 {
+      right: -50%;
+      left: 50%; } }
+  @media only screen and (min-width: 2260px) {
+    .client-img3 {
+      left: 54%; } }
 
 .companies {
   background-image: url(https://assets.website-files.com/5dcc4cad8cfd667007f46563/5dcc4cad8cfd660594f4657d_Superlab_BackgroundPattern_Clients.svg);
@@ -335,6 +487,14 @@ body {
   grid-gap: 6rem 12rem;
   margin-bottom: 6rem;
   margin-top: 4rem; }
+  @media only screen and (max-width: 956px) {
+    .container-companies {
+      grid-gap: 4rem 8rem;
+      grid-template-columns: repeat(3, 1fr); } }
+  @media only screen and (max-width: 652px) {
+    .container-companies {
+      grid-gap: 4rem 8rem;
+      grid-template-columns: repeat(2, 1fr); } }
 
 .footer-svg {
   width: 30rem;
