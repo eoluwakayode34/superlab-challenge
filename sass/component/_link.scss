@@ -30,10 +30,12 @@
         text-decoration: none;
         font-weight: 700;
         color: #222222;
-        padding: 4rem;
+        padding: 2rem;
 
         @media only screen and (max-width: $bp-tab){
-            color: #fff;         
+            color: #fff; 
+            padding: 4rem;
+        
            
 
         }

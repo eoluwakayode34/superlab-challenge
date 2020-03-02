@@ -7,11 +7,21 @@
     padding: 0;
     align-items: center;
     // overflow: hidden;
+     @media only screen and (max-width: $bp-tab-port){
+        justify-content: center ;
+        padding: 6rem;
+
+    }
+
 }
 
 .section-work-text{
  
      flex-basis: 70%;
+     @media only screen and (max-width: $bp-tab-port){
+        flex-basis: 100%;
+        text-align: center;
+    }
      
 }
 
@@ -21,15 +31,26 @@
     align-self: flex-start;
     margin: 0;
 
+
+    @media only screen and (max-width: $bp-tab-port){
+        display: none;
+    }
+
 }
 
 
 .section-work-text-heading{
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     color: #fff;
     width: 60%;
     font-weight: 300;
     background: #36083c;
     padding: 2rem;
+
+    @media only screen and (max-width: $bp-tab-port){
+        width: 100%;
+        text-align: center;
+        padding: 8rem;
+    }
    
 }
