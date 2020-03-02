@@ -1,17 +1,22 @@
 .page{
 
     &-header{
-        position: fixed;
+        position: sticky;
         background: #fff;
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2rem $page-right-m 2rem $page-left-m;
+        padding: 2rem 0 2rem $page-left-m;
         z-index: 5000;
+        left: 0;
+
+        
+       
+        }
         
 
-    }
+    
 
     &-logo{
         width: 4rem;
@@ -25,11 +30,15 @@
 
 }
 
-.flex{
-    display: flex;
+
+
+@media (min-width: 1280px){
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+
+    }
 }
-
-
 
 
 
