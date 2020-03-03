@@ -225,6 +225,9 @@ body {
   left: 0; }
   @media only screen and (max-width: 956px) {
     .page-header {
+      padding: 2rem 7rem 2rem 4rem; } }
+  @media only screen and (max-width: 652px) {
+    .page-header {
       padding: 2rem 5rem 2rem 4rem; } }
 
 .page-logo {
@@ -504,6 +507,10 @@ body {
   @media only screen and (max-width: 652px) {
     .client-img2 {
       left: 5rem;
+      top: 0; } }
+  @media only screen and (max-width: 416px) {
+    .client-img2 {
+      left: 0;
       top: 0; } }
 
 .client-img3 {
