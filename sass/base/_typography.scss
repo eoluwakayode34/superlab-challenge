@@ -10,6 +10,10 @@ $secondary-font: 'Anonymous Pro', ;
     margin: 4rem 0;
     letter-spacing: -.3rem;
 
+    @media only screen and (max-width: $bp-small-port){
+        font-size: 7.8rem;
+    }
+
 }
 
 .text-primary{
