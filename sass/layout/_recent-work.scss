@@ -8,7 +8,20 @@
 
     @media only screen and (max-width: $bp-tab-port){
         grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10rem;
     }
+
+    @media only screen and (max-width:  $bp-small){
+        grid-gap: 15rem; 
+        padding: 0 5rem;
+    }
+
+    @media only screen and (max-width:  $bp-small-port){
+        grid-gap: 10rem; 
+        padding: 0 5rem;
+    }
+
+    
 
 
     &-item{
@@ -27,23 +40,28 @@
 
     
     @media only screen and (min-width: 1572px){
-        left: 30%;
+        left: 0;
     }
 
     @media only screen and (min-width: $bp-large){
-        right: -50%;
-        left: 40%;
+        left: 0;
     }
 
     @media only screen and (max-width: $bp-tab){
         left: 0;
-        width: 35rem
+        width: 100%;
 
     }
 
     @media only screen and (max-width: $bp-tab-port){
-        left: 40%;
+        left: 0;
+        left: -50%;
     }
+    @media only screen and (max-width: $bp-small){
+        left: 0;
+    }
+
+
 
 }
 
@@ -94,7 +112,10 @@
     }
 
     @media only screen and (max-width: $bp-tab-port){
-        top: 5rem;
+        top: 14rem;
+    }
+    @media only screen and (max-width: $bp-small-port){
+        top: 4rem;
     }
 
     &-detail{
@@ -176,6 +197,11 @@
     @media only screen and (max-width: $bp-tab){
         left: 50%;
     }
+
+    @media only screen and (max-width: $bp-small){
+        top: 0;
+        left: inherit;
+    }
 }
 
 .semi-circle-arc{
@@ -203,6 +229,12 @@
     left: 10rem;
     top: 0;
     box-shadow: $box-shawdow-big;
+
+    @media only screen and (max-width: $bp-tab-port){
+        left: 5rem;
+        top: 0;
+
+    }
 }
 
 .client-img3{
@@ -214,23 +246,45 @@
     top: 4rem;
     box-shadow: $box-shawdow-big;
 
-    @media only screen and (max-width: $bp-tab){
-        width: 32rem;
-    }
+    // @media only screen and (max-width: $bp-tab){
+    //     width: 32rem;
+    // }
 
 
         
+    // @media only screen and (min-width: 1572px){
+    //     left: 43%;
+    // }
+
+    // @media only screen and (min-width: $bp-large){
+    //     right: -50%;
+    //     left: 50%;
+
+    // }
+
+    // @media only screen and (min-width: 2260px){
+    //     left: 54%;
+    // }
     @media only screen and (min-width: 1572px){
-        left: 43%;
+        left: 0;
     }
 
     @media only screen and (min-width: $bp-large){
-        right: -50%;
-        left: 50%;
+        left: 0;
+    }
+
+    @media only screen and (max-width: $bp-tab){
+        left: 0;
+        width: 100%;
 
     }
 
-    @media only screen and (min-width: 2260px){
-        left: 54%;
+    @media only screen and (max-width: $bp-tab-port){
+        left: -25%;
+        top: 1rem;
     }
+    @media only screen and (max-width: $bp-small){
+        left: 0;
+    }
+
 }
