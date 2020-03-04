@@ -225,6 +225,9 @@ body {
   left: 0; }
   @media only screen and (max-width: 956px) {
     .page-header {
+      padding: 2rem 7rem 2rem 4rem; } }
+  @media only screen and (max-width: 652px) {
+    .page-header {
       padding: 2rem 5rem 2rem 4rem; } }
 
 .page-logo {
@@ -505,6 +508,10 @@ body {
     .client-img2 {
       left: 5rem;
       top: 0; } }
+  @media only screen and (max-width: 416px) {
+    .client-img2 {
+      left: 0;
+      top: 0; } }
 
 .client-img3 {
   width: 38rem;
@@ -608,3 +615,28 @@ body {
 
 .dribbble {
   background-image: url(https://assets.website-files.com/5dcc4cad8cfd667007f46563/5dcc4cad8cfd6634faf46587_logo-dribbble.svg); }
+
+.mb-large {
+  padding-bottom: 15rem;
+  margin-bottom: 10rem; }
+
+.mt-large {
+  padding-top: 15rem;
+  margin-top: 10rem; }
+
+.showcase-img-work {
+  margin-right: 1rem !important;
+  width: 0;
+  flex-basis: 32%; }
+
+.order-1 {
+  order: 1; }
+
+.order-2 {
+  order: 2; }
+
+.order-3 {
+  order: 4; }
+
+.order-4 {
+  order: 3; }
